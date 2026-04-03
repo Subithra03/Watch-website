@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Watch collections Product page</title>
+	<link rel="stylesheet" href="product.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script> 
+</head>
+<body style="background-color: black;">
+    <div id="body-main">
+        <div id="sub-main">
+            <header>
+                <div class="left">
+                   
+                    <a href="#"><i class="fa-solid fa-phone" style="color: #fcfcfd;"></i>9876543210</a>
+                    <a href="#"><i class="fa-solid fa-envelope" style="color: #fcfcfd;"></i>watchcollections@gmail.com</a>
+                </div>
+                <div class="right">
+                    <a href="#"><i class="fa-solid fa-location-dot" style="color: #fafafa;"></i>Puducherry</a>
+                </div>
+            </header>
+        </div>
+        <div id="nav-bar">
+            <div class="logo">
+                 <h2>WATCH COLLECTIONS</h2>
+            </div>
+            <div id="nav-link">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html">Contact us</a>
+                <i class="fa-solid fa-bars" onclick="shownavbar()" style="color: white; font-size: 25px;"></i>      
+            </div>
+        </div>
+        <div class="side-navbar">
+            <div class="side-navlink">
+                <div id="close-navbar">
+                    <p onclick="closenavbar()"> <strong>X</strong></p>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+        <div class="container-fluid"id="breadcrumb">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb m-4">
+                    <li class="breadcrumb-item"><a style="font-size:20px;color:rgb(247, 172, 107);text-decoration: none;" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" style="font-size:20px" aria-current="page">Product</li>
+                </ol>
+            </nav>
+        </div>
+        <div id="row1" class="container-fluid" >
+            <div class="container py-5" id="product-page">
+                <h2 class="text-center mb-4" style="color:rgb(247,203,165)">Our Products</h2>
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/black color vintage watch.png" class="card-img-top product-img" style="height:270px" alt="black color vintage watch">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Black color vintage watch</h5>
+                                <p class="card-text">Feature-packed smartwatch with fitness tracking, notifications, and 7-day battery life.</p>
+                                <p class="product-price" >₹2,000</p>
+                                <button id="btn" class="btn btn-buy w-100" onclick="redirectToCheckout('Black color vintage watch', 2000)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/white strap watch.png"style="height:270px" class="card-img-top product-img" alt="white strap watch">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">White strap watch</h5>
+                                <p class="card-text">Feature-packed smartwatch with fitness tracking, notifications, and 7-day battery life.</p>
+                                <p class="product-price" >₹2,500</p>
+                                <button id="btn"class="btn btn-buy w-100" onclick="redirectToCheckout('White strap watch', 2500)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/bronze color vintage watch.png" class="card-img-top product-img"style="height:270px" alt="bronze color vintage watch">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Bronze color vintage watch</h5>
+                                <p class="card-text">Feature-packed smartwatch with fitness tracking, notifications, and 7-day battery life.</p>
+                                <p class="product-price" >₹2,500</p>
+                                <button id="btn" class="btn btn-buy w-100" onclick="redirectToCheckout('Bronze color vintage watch', 2500)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/goldenwatch.png" class="card-img-top product-img"style="height:270px" alt="Goldenwatch">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Goldenwatch</h5>
+                                <p class="card-text">Feature-packed watch with fitness tracking, notifications, and 7-day battery life.</p>
+                                <p class="product-price" >₹3,000</p>
+                                <button id="btn" class="btn btn-buy w-100" onclick="redirectToCheckout('Goldenwatch',3000)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/silver and metal watch.png" class="card-img-top product-img" style="height:270px" alt="Silver and metal watch">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Silver and metal watch</h5>
+                                <p class="card-text">Feature-packed smartwatch with fitness tracking, notifications, and 7-day battery life.</p>
+                                <p class="product-price">₹5,000</p>
+                                <button id="btn" class="btn btn-buy w-100" onclick="redirectToCheckout('Silver and metal watch', 5000)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/silver watch.jpg" class="card-img-top product-img"style="height:250px" alt="Premium tablet with stylus support">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Branded Silver watch</h5>
+                                <p class="card-text">Feature-packed smartwatch with fitness tracking, notifications, and 7-day battery life..</p>
+                                <p class="product-price" >₹4,000</p>
+                                <button id="btn" class="btn btn-buy w-100" onclick="redirectToCheckout('', 4000)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/circle shapesmart watch.png"style="height:280px" class="card-img-top product-img" alt="circle shapesmart watch">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Circle shapesmart watch</h5>
+                                <p class="card-text">Feature-packed smartwatch with fitness tracking, notifications, and 7-day battery life.</p>
+                                <p class="product-price">₹3,500</p>
+                                <button id="btn" class="btn btn-buy w-100" onclick="redirectToCheckout('Circle shapesmart watch', 3500)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/smart watch.png" class="card-img-top product-img"style="height:280px" alt="smart watch">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">Smart watch</h5>
+                                <p class="card-text">34" curved gaming monitor with 144Hz refresh rate.</p>
+                                <p class="product-price">₹3,000</p>
+                                <button id="btn" class="btn btn-buy w-100" onclick="redirectToCheckout('Smart watch', 3000)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Product-9-->
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="image/white strap digital watch.png" class="card-img-top product-img"style="height:280px" alt="White strap digital watch">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">White strap digital watch</h5>
+                                <p class="card-text">Feature-packed smartwatch with fitness tracking, notifications, and 7-day battery life.</p>
+                                <p class="product-price">₹4,000</p>
+                                <button id="btn" class="btn btn-buy w-100" onclick="redirectToCheckout('White strap digital watch', 4000)">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Purchase Summary Page (Hidden by default) -->
+            <div class="container py-5" id="checkout-page" style="display: none;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-center mb-4" style="color:rgb(247, 203, 165)">Purchase Summary</h2>
+                        <!-- Order Summary Table -->
+                        <div class="summary-table p-4 mb-4">
+                            <h4 class="mb-3">Order Details</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Details</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="order-summary">
+                                    <!-- Will be populated by JavaScript -->
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Total</th>
+                                        <th id="order-total">₹0</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <!-- Customer Details Form -->
+                        <div class="summary-table p-4 mb-4">
+                            <h4 class="mb-3">Please enter your details </h4>
+                            <form id="checkout-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="mobile" class="form-label">Mobile Number</label>
+                                        <input type="tel" class="form-control" id="mobile" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="pincode" class="form-label">Pincode</label>
+                                        <input type="text" class="form-control" id="pincode" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <textarea class="form-control" id="address" rows="3" required></textarea>
+                                </div>
+                                
+                                <h4 class="mb-3 mt-4">Payment Method</h4>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="onlinePayment" value="online" checked>
+                                        <label class="form-check-label" for="onlinePayment">
+                                            Online Payment
+                                        </label>
+                                    </div>
+                                    <div class="payment-method mt-2" id="onlinePaymentMethods">
+                                        <div class="form-check mb-2">
+                                            <input type="radio" id="gpay" name="upiOption" value="gpay" class="form-check-input" checked>
+                                            <label class="form-check-label" for="gpay">
+                                            Google Pay
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="radio" id="phonepe" name="upiOption" value="phonepe" class="form-check-input">
+                                        <label class="form-check-label" for="phonepe">
+                                            PhonePe
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="paytm" name="upiOption" value="paytm" class="form-check-input">
+                                        <label class="form-check-label" for="paytm">
+                                            Paytm
+                                        </label>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="cod" value="cod">
+                                        <label class="form-check-label" for="cod">
+                                            Cash on Delivery
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-lg w-100" style="background-color: rgb(247, 172, 107);;color:white;">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <div class="container-fluid mt-3" id="copyright">
+                <p>© 2025 | Designed By WatchCollections | All rights Reserved</p>
+        </div>
+    
+<script src="product.js"></script>
+</body>
+</html>
+
+
+      

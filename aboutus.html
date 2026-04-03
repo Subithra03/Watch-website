@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Watch collections About Page</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: black;">
+    <div id="body-main">
+        <div id="sub-main">
+            <header>
+                <div class="left">
+                    <a href="#"><i class="fa-solid fa-phone" style="color: #fcfcfd;"></i>9876543210</a>
+                    <a href="#"><i class="fa-solid fa-envelope" style="color: #fcfcfd;"></i>watchcollections@gmail.com</a>
+                </div>
+                <div class="right">
+                    <a href="#"><i class="fa-solid fa-location-dot" style="color: #fafafa;"></i>Puducherry</a>
+                </div>
+            </header>
+        </div>
+        <div id="nav-bar">
+            <div class="logo">
+                <h2>WATCH COLLECTIONS</h2>
+            </div>
+            <div id="nav-link">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html">Contact us</a>
+                <i class="fa-solid fa-bars" onclick="shownavbar()" style="color:white; font-size: 25px;"></i>      
+            </div>
+        </div>
+        <div class="side-navbar">
+            <div class="side-navlink">
+                <div id="close-navbar">
+                    <p onclick="closenavbar()"> <strong>X</strong></p>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="product.html">Product</a>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+        <div class="container-fluid" id="breadcrumb">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb m-4">
+                    <li class="breadcrumb-item"><a style="font-size:20px;color:rgb(247, 172, 107);text-decoration: none;"href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active"style="font-size:20px;" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+        <div id="row1" class="container" >
+            <h2 style="color:rgb(250, 249, 248);text-align: center;padding-top:40px">ABOUT US</h2>
+            <p style="font-size: 20px; color:white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;padding-top: 15px;"> Our 20 years of experience working in the watch industry, we understood the intricacies and nuances of selecting the perfect watch.Recognizing the need for a comprehensive platform, we created a solution. The Watch collections is not just a website but a pioneering resource where you can effortlessly search for new watches worldwide, compare models, check prices, and discover new brands all in one place.The Watch collection Shop features a selection of watches handpicked by our team and sourced directly from the manufacturer, so 100% genuine.We are continuously adding new brands and models to our shop collection. We are passionate about delivering exceptional service and great value to our customers, and we are an authorized retailer of all the brands we sell.</p>
+        </div>
+        <div class="container">
+            <h1 style="color:white">TRENDING COLLECTIONS</h1>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Product 1 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100" >
+                                    <img src="image/black color vintage watch.png" class="card-img-top product-img" style="height:270px" alt="black color vintage watch">
+                                    <div class="card-body">
+                                        <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 2 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="image/white strap watch.png"style="height:270px" class="card-img-top product-img" alt="white strap watch">
+                                    <div class="card-body">
+                                       <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 3 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="image/bronze color vintage watch.png" class="card-img-top product-img"style="height:270px" alt="bronze color vintage watch">
+                                    <div class="card-body"> 
+                                       <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Product 4 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="image/goldenwatch.png" class="card-img-top product-img"style="height:270px" alt="Goldenwatch">
+                                    <div class="card-body">
+                                       <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 5 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="image/silver and metal watch.png" class="card-img-top product-img" style="height:270px" alt="Silver and metal watch">
+                                    <div class="card-body">  
+                                       <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 6 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="image/silver watch.jpg" class="card-img-top product-img"style="height:250px" alt="Premium tablet with stylus support">
+                                    <div class="card-body">
+                                       <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Product 7 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="image/circle shapesmart watch.png"style="height:280px" class="card-img-top product-img" alt="circle shapesmart watch">
+                                    <div class="card-body">
+                                      <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 8 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="image/smart watch.png" class="card-img-top product-img"style="height:280px" alt="smart watch">
+                                    <div class="card-body">
+                                        <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Product-9-->
+                            <div class="col-md-4 mb-4">
+                                <div class="card product-card h-100">
+                                    <img src="image/white strap digital watch.png" class="card-img-top product-img"style="height:280px" alt="White strap digital watch">
+                                    <div class="card-body">
+                                      <a href="product.html"><button id="btn" class="btn w-100" >SEE MORE</button></a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap"></a>
+                      <span class="fs-5 lh-lg fw-bold  text-uppercase" style="color:white">WATCH COLLECTIONS</span>
+                    </a>  
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5 class="lh-lg fw-bold  text-uppercase"style="color:white">Links</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><a href="index.html" style="color:white;text-decoration: none;">Home</a></li>
+                      <li class="mb-2"><a href="aboutus.html" style="color:white;text-decoration: none;">About Us</a></li>
+                      <li class="mb-2"><a href="product.html" style="color:white;text-decoration: none;">Product</a></li>
+                      <li class="mb-2"><a href="Contact.html" style="color:white;text-decoration: none;">Contact</a></li>
+                     
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                    <h5 class="lh-lg fw-bold  text-uppercase"style="color:white">CONTACT US</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#" style="color:white;text-decoration: none;">JawaharlalNehru Street,Pondicherry </a></li>
+                      <li class="mb-2"><a href="#" style="color:white;text-decoration: none;">watch@gmail.com</a></li>
+                      <li class="mb-2"><a href="#" style="color:white;text-decoration: none;">9876543210</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-3"style="color:white">
+                    <h5 class="lh-lg fw-bold text-uppercase">Signup For our Latest News</h5>
+                    <div class="row input-group-icon mb-5">
+                        <div class="col-12">
+                            <form class="row row-cols-lg-auto g-0 align-items-center">
+                                <div class="col-8 col-lg-9"><label class="visually-hidden" for="colFormLabel">Username</label>
+                                   <div class="input-group"><input class="rounded-end-0 form-control" id="colFormLabel" type="email" placeholder="email address"></div>
+                                </div>
+                                <div class="col-4 col-lg-3"><button class="btn  rounded-start-0" type="submit" style="background-color: rgb(247,203,165);">Submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-3" id="copyright">
+            <p>© 2025 | Designed By WatchCollections | All rights Reserved</p>
+        </div>    
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
+
+    
